@@ -1,0 +1,52 @@
+@import "~/src/scss/index.scss";
+
+.subida-item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: 0;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-titulo {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        &-descripcion,
+        &-solicitud-titulo,
+        &-solicitud-descripcion {
+            margin-bottom: 5px;
+        }
+
+        &-solicitud-titulo {
+            font-weight: bold;
+            color: #333;
+
+        }
+
+        &-solicitud-descripcion {
+            color: #666;
+            font-weight: normal;
+        }
+    }
+
+    .subida-upload-button {
+        background-color: #2185d0;
+        color: white;
+
+        &:hover {
+            background-color: #1678c2;
+        }
+    }
+}

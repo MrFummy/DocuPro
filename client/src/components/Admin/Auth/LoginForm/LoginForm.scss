@@ -1,0 +1,11 @@
+@import "~/src/scss/index.scss";
+
+.login-form {
+    &__error {
+        color: $error;
+        text-align: center;
+    }
+    /*&__boton {
+        background-color: $primary !important;
+    }*/
+}

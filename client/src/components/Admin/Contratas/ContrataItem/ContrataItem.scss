@@ -1,0 +1,30 @@
+@import "~/src/scss/index.scss";
+
+.contrata-item {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-bottom: 1px solid #e4e4e4;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border: 0;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+
+        &-titulo {
+            font-weight: bold;
+        }
+
+        &-descripcion {
+            opacity: 0.6;
+        }
+
+    }
+}
