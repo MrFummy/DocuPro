@@ -5,15 +5,15 @@ export class Menu {
 
 
 
-    async getMenu(accessToken, active = undefined){
+    async getMenu(active = undefined){
         try{
-            const url = `${this.baseApi}/${ENV.API_ROUTES.MENU}?active=${active}`;
-            const params = {
+            const url = `${this.baseApi}${ENV.API_ROUTES.MENU}?active=${active}`;
+            /*const params = {
                 headers: {
                     Authorization: `Bearer ${accessToken}` 
                 }
-            };
-            const response = await fetch(url, params);
+            };*/
+            const response = await fetch(url);
             const result = await response.json();
             if (response.status !== 200) throw result;
             return result;

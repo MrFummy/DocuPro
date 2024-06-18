@@ -16,7 +16,7 @@ export function ListMenu(props){
         (async () => {
             try {
                 setMenus(null);
-                const response = await menuController.getMenu(accessToken, active);
+                const response = await menuController.getMenu(active);
                 setMenus(response);
 
             } catch (error) {
