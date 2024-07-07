@@ -26,20 +26,26 @@ export function AdminMenu() {
                 <Icon name="bars" />
                 Menu
             </Menu.Item>
+            </>
+                )}
+
+            <Menu.Item as={Link} to="/admin/documentacion" active={isCurrentPath("/admin/documentacion")}>
+                <Icon name="computer" />
+                Solicitudes
+            </Menu.Item>
+            <Menu.Item as={Link} to="/admin/subidas" active={isCurrentPath("/admin/subidas")}>
+                <Icon name="upload" />
+                Subidas
+            </Menu.Item>
+
+            {isAdmin && (
+            <>
             <Menu.Item as={Link} to="/admin/contratas" active={isCurrentPath("/admin/contratas")}>
                 <Icon name="address card outline" />
                 Validaciones
             </Menu.Item>
             </>
                 )}
-            <Menu.Item as={Link} to="/admin/documentacion" active={isCurrentPath("/admin/documentacion")}>
-                <Icon name="computer" />
-                Documentacion
-            </Menu.Item>
-            <Menu.Item as={Link} to="/admin/subidas" active={isCurrentPath("/admin/subidas")}>
-                <Icon name="upload" />
-                Subidas
-            </Menu.Item>
             <Menu.Item as={Link} to="/admin/newsletter" active={isCurrentPath("/admin/newsletter")}>
                 <Icon name="mail" />
                 Suscribirse
